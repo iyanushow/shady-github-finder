@@ -7,7 +7,7 @@ import {
   FETCH_DATA,
 } from '../Types';
 
-export default (state, action) => {
+const githubReducer = (state, action) => {
   switch (action.type) {
     case FETCH_DATA:
       return {
@@ -48,3 +48,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default githubReducer;
